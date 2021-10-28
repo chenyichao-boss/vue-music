@@ -1,0 +1,51 @@
+// 颜色定义规范
+$color-background: #222;
+$color-background-d: rgba(0, 0, 0, 0.3);
+$color-highlight-background: #333;
+$color-dialog-background: #666;
+$color-theme: #ffcd32;
+$color-theme-d: rgba(255, 205, 49, 0.5);
+$color-sub-theme: #d93f30;
+$color-text: #fff;
+$color-text-d: rgba(255, 255, 255, 0.3);
+$color-text-l: rgba(255, 255, 255, 0.5);
+$color-text-ll: rgba(255, 255, 255, 0.8);
+
+body, html {
+  line-height: 1;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback';
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  background: $color-background;
+  color: $color-text;
+}
+
+.g-relative {
+  position: relative;
+}
+
+.slide-enter-active, .slide-leave-active {
+  transition: all 0.3s
+}
+
+.slide-enter-from, .slide-leave-to {
+  transform: translate3d(100%, 0, 0)
+}
+
+.list-enter-active, .list-leave-active {
+  transition: all 0.3s;
+}
+
+.list-enter-from, .list-leave-to {
+  height: 0 !important;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
